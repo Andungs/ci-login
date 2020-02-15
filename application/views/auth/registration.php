@@ -6,15 +6,18 @@
                 <div class="col">
                     <div class="p-5">
                         <div class="text-center">
-                            <h1 class="h4 text-gray-900 mb-4">Create Account!</h1>
+                            <h1 class="h4 text-gray-900 mb-4">Tambah Akun</h1>
+                        </div>
+                        <div class=" text-center">
+                            <img src="<?= base_url('assets/img/logo/logo.png') ?>" class=" mb-4" style="width: 200px" alt="logo samsat">
                         </div>
                         <form action="" method="POST" class="user">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control form-control-user" id="name" placeholder="Full Name" value="<?= set_value('name'); ?>">
+                                <input type="text" name="name" class="form-control form-control-user" id="name" placeholder="Nama" value="<?= set_value('name'); ?>">
                                 <small class="text-danger"> <?= form_error('name');  ?> </small>
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address" value="<?= set_value('email'); ?>">
+                                <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email" value="<?= set_value('email'); ?>">
                                 <small class="text-danger"> <?= form_error('email');  ?> </small>
                             </div>
                             <div class="form-group row">
@@ -27,16 +30,15 @@
                                     <input type="password" name="password2" class="form-control form-control-user" id="password2" placeholder="Repeat Password">
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-user btn-block">
-                                Register Account
+                            <button class="btn btn-primary btn-user btn-block" type="submit">
+                                <span class="spinner-border spinner-border-sm"></span>
+                                Tambah Akun
                             </button>
                         </form>
                         <hr>
+
                         <div class="text-center">
-                            <a class="small" href="forgot-password.html">Forgot Password?</a>
-                        </div>
-                        <div class="text-center">
-                            <a class="small" href="<?= base_url('auth'); ?>">Already have an account? Login!</a>
+                            <a class="small" href="<?= base_url('auth'); ?>">Sudah Punya Akun ? klik Disini</a>
                         </div>
                     </div>
                 </div>

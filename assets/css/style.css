@@ -1,0 +1,14 @@
+.page-holder {
+	min-height: 100vh;
+}
+
+.bg-cover {
+	background-size: cover !important;
+}
+
+.img {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: 60%;
+}
